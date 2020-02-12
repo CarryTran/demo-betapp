@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 
 /**
@@ -19,9 +20,9 @@ public class HelpFragment extends Fragment {
     private WebView webView;
     private ProgressDialog dialog;
     private View v;
+    private final static String link = "https://tawk.to/chat/5e168eae27773e0d832c9482/default";
 
     public HelpFragment() {
-        // Required empty public constructor
     }
 
 
@@ -31,7 +32,6 @@ public class HelpFragment extends Fragment {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_help, container, false);
         getActivity().setTitle("TRUNG TÂM HỖ TRỢ");
-        String link = "https://tawk.to/chat/5e168eae27773e0d832c9482/default";
 
         webView = (WebView) v.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -54,6 +54,7 @@ public class HelpFragment extends Fragment {
         }
         catch (Exception ex) {
             Log.e("LOI:", ex.toString());
+            Toast.makeText(getContext(), "LỖI: Không thể kết nối với trung tâm hỗ trợ.", Toast.LENGTH_SHORT).show();
         }
 
         return v;
