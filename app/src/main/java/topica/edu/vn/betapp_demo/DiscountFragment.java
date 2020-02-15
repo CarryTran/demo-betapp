@@ -261,4 +261,5 @@ public class DiscountFragment extends Fragment {
         super.onDetach();
         this.listener = null;
     }
+
 }

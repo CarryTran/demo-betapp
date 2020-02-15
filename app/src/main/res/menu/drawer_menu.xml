@@ -7,6 +7,7 @@
 
         <item android:id="@+id/home" android:title="TRANG CHỦ" android:icon="@drawable/ic_home_black_24dp"/>
         <item android:id="@+id/discount" android:title="ĐĂNG KÝ KHUYẾN MÃI" android:icon="@drawable/ic_discount_black_24dp"/>
+        <item android:id="@+id/intro" android:title="GIỚI THIỆU NGƯỜI CHƠI" android:icon="@drawable/ic_discount_black_24dp"/>
         <item android:id="@+id/help" android:title="TRUNG TÂM HỖ TRỢ" android:icon="@drawable/ic_live_help_black_24dp"/>
         <item android:id="@+id/exit" android:title="THOÁT" android:icon="@drawable/ic_exit_to_app_black_24dp"/>
     </group>

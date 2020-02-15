@@ -1,5 +1,7 @@
 package topica.edu.vn.betapp_demo;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -64,12 +66,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             DiscountFragment fragment = new DiscountFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame_layout, fragment, "ĐĂNG KÝ KHUYẾN MÃI");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+        else if(id == R.id.intro) {
+            IntroPlayersFragment fragment = new IntroPlayersFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment, "GIỚI THIỆU NGƯỜI CHƠI");
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         else if(id == R.id.help) {
             HelpFragment fragment = new HelpFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame_layout, fragment, "TRUNG TÂM HỖ TRỢ");
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
         else if(id == R.id.exit) {
@@ -85,7 +96,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mDrawerLayout.closeDrawer(GravityCompat.START);
         }
         else {
-            super.onBackPressed();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this, android.app.AlertDialog.THEME_DEVICE_DEFAULT_DARK);
+
+            builder.setTitle("Thông báo");
+            builder.setMessage("Quý khách có muốn thoát ứng dụng không?");
+            builder.setCancelable(false);
+            builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    System.exit(0);
+                }
+            });
+            builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                }
+            });
+            builder.show();
         }
     }
 }
