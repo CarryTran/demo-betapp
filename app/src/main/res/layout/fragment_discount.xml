@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtLinkTrangChu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1. Họ và tên đầy đủ:"

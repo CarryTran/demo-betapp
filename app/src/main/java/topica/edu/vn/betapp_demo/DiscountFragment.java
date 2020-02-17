@@ -12,7 +12,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,7 +52,7 @@ public class DiscountFragment extends Fragment {
 
     private View v;
     public static String fullname, username, phone, ynq;
-    final static String LINK = "https://script.google.com/macros/s/AKfycbxJjJ2XnDO0NeKnEtXz4OFqPtO-XGmfjaSvpOrR81Uoq8erZhk/exec";
+    final static String LINK = "https://script.google.com/macros/s/AKfycbz_vnrqOZ0BhAcwXRZ7nxGKLUJEhDF5IkglDoamnEmKy6plB73Y/exec";
     final static String PHONE_REGEX = "(0+[1-9])+([0-9]{8})\\b";
 
     public DiscountFragment() {
@@ -232,7 +231,7 @@ public class DiscountFragment extends Fragment {
         }
     }
 
-    public String getPostDataString(JSONObject params) throws Exception {
+    public static String getPostDataString(JSONObject params) throws Exception {
         StringBuilder result = new StringBuilder();
         boolean first = true;
 

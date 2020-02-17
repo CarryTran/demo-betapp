@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.CookieManager;
 import android.webkit.HttpAuthHandler;
 import android.webkit.JsPromptResult;
@@ -28,12 +30,16 @@ public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_web_view);
 
         addControls();
 
-        this.setTitle("MAIN");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        /*this.setTitle("MAIN");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         Bundle bundle = getIntent().getExtras();
         String msg = bundle.getString("msg");
@@ -161,9 +167,6 @@ public class WebViewActivity extends AppCompatActivity {
             Log.e("LOI:", ex.toString());
         }
     }
-
-
-
 
     @Override
     public void onBackPressed() {
