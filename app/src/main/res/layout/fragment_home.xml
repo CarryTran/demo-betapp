@@ -47,25 +47,13 @@
             android:textStyle="bold" />-->
 
             <Button
-                android:id="@+id/btnSignUp"
+                android:id="@+id/btnHOME"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
 
                 android:layout_marginTop="40dp"
                 android:background="#FF9800"
-                android:text="ĐĂNG KÝ"
-                android:textColor="@color/whiteColor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btnSignIn"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="0dp"
-                android:background="@color/blueColor"
-                android:text="ĐĂNG NHẬP"
+                android:text="TRANG CHỦ"
                 android:textColor="@color/whiteColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
