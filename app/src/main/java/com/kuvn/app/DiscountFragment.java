@@ -1,4 +1,4 @@
-package com.ku.vn.app;
+package com.kuvn.app;
 
 
 import android.app.Activity;

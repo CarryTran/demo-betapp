@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundphoto"
-    tools:context=".IntroPlayersFragment">
+    android:background="@color/DarkBlueColor"
+    tools:context="com.kuvn.app.IntroPlayersFragment">
 
 
     <LinearLayout
@@ -26,7 +26,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/whiteColor"
+            android:textColorHint="#FFC107" />
 
         <TextView
             android:id="@+id/textView2"
@@ -41,6 +43,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -57,6 +60,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="FF3216"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -72,6 +76,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <Button
@@ -97,4 +102,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

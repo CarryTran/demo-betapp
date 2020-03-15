@@ -1,8 +1,8 @@
-package com.ku.vn.app;
+package com.kuvn.app;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Window;
@@ -60,7 +60,7 @@ public class WebViewActivity extends AppCompatActivity {
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setDomStorageEnabled(true);
-        webSettings.setBuiltInZoomControls(true);
+        //webSettings.setBuiltInZoomControls(true);
         webSettings.setAppCacheEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setSupportMultipleWindows(true);

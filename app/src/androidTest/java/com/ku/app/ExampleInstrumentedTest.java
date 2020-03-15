@@ -1,4 +1,4 @@
-package com.ku.vn.app;
+package com.ku.app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

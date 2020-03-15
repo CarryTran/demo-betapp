@@ -1,4 +1,4 @@
-package com.ku.vn.app;
+package com.kuvn.app;
 
 
 import android.content.Intent;
@@ -62,7 +62,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), WebViewActivity.class);
-                intent.putExtra("msg", "https://ku9vn.com/index.php/category/home/");
+                intent.putExtra("msg", "https://ku9vn.com/home/");
                 startActivity(intent);
             }
         });

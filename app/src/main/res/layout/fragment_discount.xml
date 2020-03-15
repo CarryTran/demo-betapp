@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundphoto"
-    tools:context=".DiscountFragment" >
+    android:background="@color/DarkBlueColor"
+    tools:context="com.kuvn.app.DiscountFragment">
 
 
     <LinearLayout
@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -41,6 +42,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -56,6 +58,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:backgroundTint="@color/whiteColor"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -112,4 +115,4 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

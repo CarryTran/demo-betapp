@@ -1,4 +1,4 @@
-package com.ku.vn.app;
+package com.ku.app;
 
 import org.junit.Test;
 

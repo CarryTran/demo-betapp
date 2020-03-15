@@ -1,4 +1,4 @@
-package com.ku.vn.app;
+package com.kuvn.app;
 
 
 import android.app.ProgressDialog;
@@ -21,7 +21,7 @@ public class HelpFragment extends Fragment {
     private WebView webView;
     private ProgressDialog dialog;
     private View v;
-    private final static String link = "https://ku9vn.com/index.php/category/ho-tro/";
+    private final static String link = "https://ku9vn.com/hotro/";
 
     public HelpFragment() {
     }
@@ -40,7 +40,7 @@ public class HelpFragment extends Fragment {
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setDomStorageEnabled(true);
-        webSettings.setBuiltInZoomControls(true);
+        //webSettings.setBuiltInZoomControls(true);
         webSettings.setAppCacheEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setSupportMultipleWindows(true);
